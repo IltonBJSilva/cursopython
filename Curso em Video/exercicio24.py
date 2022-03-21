@@ -6,6 +6,7 @@ cidade = str(input("Digitei o nome da cidade: "))
 
 if cidade.split()[0].find('Santos'):
     print("Não começa com Santos")
+
 else:
     print("Começa com Santos")
 

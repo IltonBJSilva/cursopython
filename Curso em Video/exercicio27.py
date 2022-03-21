@@ -7,4 +7,5 @@ nome = str(input("Insira um nome: "))
 print(f""""
 Primeiro nome {nome.split()[0]}
 Ultimo nome {nome.split()[-1]}
+
 """)
