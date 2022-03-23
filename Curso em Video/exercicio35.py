@@ -11,6 +11,7 @@ cor = {'limpa': '\033[m',
        'azul': '\033[34m',
        'lilas': '\033[35m'}
 
+
 print(f"{cor['lilas']}-=" * 12)
 print("Analisador de Triângulos")
 print(f"{cor['lilas']}-=" * 12)
