@@ -1,0 +1,24 @@
+#   Exercício Python 065 - Maior e Menor valores
+#   Crie um programa que leia vários números inteiros pelo teclado.
+#   No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor valores lidos.
+#   O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
+import statistics
+
+bd = []
+soma = 0
+
+while True:
+    valor = int(input("Digite quantos valores deseja calcular a media: "))
+    contador = 1
+    while contador <= valor:
+        valoreal = int(input("Digite: "))
+        contador+=1
+        bd.append(valoreal)
+    break
+
+
+print(f'''
+Maximo - {max(bd)}
+Minimo - {min(bd)}
+Media - {statistics.mean(bd)}
+''')
