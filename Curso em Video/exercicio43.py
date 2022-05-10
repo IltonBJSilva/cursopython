@@ -12,11 +12,12 @@ peso = float(input("Digite o seu peso: "))
 altura = float(input("Digite a sua altura: "))
 
 imc = peso/math.pow(altura, 2)
+print(imc)
 
 if imc < 18.5:
     print("Abaixo do Peso")
 elif imc >= 18.5 and imc <= 25:
-    print("Peso Ideal")
+    print(f"{imc}: Peso Ideal")
 elif imc > 25 and imc <= 30:
     print("Sobrepeso")
 elif imc > 30 and imc <= 40:
