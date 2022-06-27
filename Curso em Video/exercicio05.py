@@ -1,3 +1,5 @@
+
+
 #   Exercício Python 005 - Operadores
 '''
 Faça um programa que leia um numero inteiro e mostre na tela o seu sucesso e antecessor

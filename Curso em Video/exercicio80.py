@@ -31,3 +31,4 @@ for intervalo in range(0, 5):
 
 
 print(f'Valores digitados: {lista}')
+print(f"Lista reversa {sorted(lista, reverse=True)}")
