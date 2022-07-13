@@ -15,8 +15,10 @@ def manipulaDadosMongoDB():
         objDic = {'codigo' : i}
         db.conheca_mongodb.insert_one(objDic)
 
-    db.conheca_mongodb.update_one({'codigo' : 2}, {"$set" : {'atributoNovo' : 789}})   
-    db.conheca_mongodb.delete_one({'codigo' : 1})
+    db.conheca_mongodb.update_one({'codigo' : 2}, {"$set" : {'atributoNovo' : 789}})  #Update em objeto
+    db.conheca_mongodb.delete_one({'codigo' : 1}) #Deletar objeto
+    db.conheca_mongodb.find({'codigo': 1})  # Deletar objeto
+
 
     resultadoConsulta = db.conheca_mongodb.find({})
     for doc in resultadoConsulta:
