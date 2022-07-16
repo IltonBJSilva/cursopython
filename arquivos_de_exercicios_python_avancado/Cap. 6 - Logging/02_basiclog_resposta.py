@@ -10,7 +10,7 @@ def main():
     # subsequentes não terão efeito
     logging.basicConfig(level=logging.DEBUG,
                         filemode="w",
-                        filename="output.log")
+                        filename="output.log") #Eescrevendo o log do programa em um arquivo
 
     # Testando cada um dos níveis de log
     logging.debug("Esta é uma mensagem de debug")

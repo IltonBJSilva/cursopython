@@ -2,7 +2,7 @@
 import logging
 
 
-dados = {'pessoa': 'jess'}
+dados = {'pessoa': 'ilton'}
 
 
 def outro_log():

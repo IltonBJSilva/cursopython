@@ -11,6 +11,7 @@ def main():
     print(next(iterador_dias))  # Dom
     print(next(iterador_dias))  # Seg
     print(next(iterador_dias))  # Ter
+    print(next(iterador_dias))  # Qua
 
     # Use uma função para iterar sobre um arquivo
     with open("dados.txt", "r") as fp:
@@ -25,13 +26,14 @@ def main():
     # dá um contador
     for i, m in enumerate(dias, start=1):
         print(i, m)
+        enumerate()
 
     # Use a função zip para combinar as listas
-    for m in zip(dias, dias_en):
+    for m in zip(dias, dias_en): #forma uma tupla
         print(m)
 
     # Combine zip com enumerate para formatar o resultado
-    for i, m in enumerate(zip(dias, dias_en), start=1):
+    for i, m in enumerate(zip(dias, dias_en), start=1): #combinando
         print(i, m[0], "=", m[1], "em Inglês")
 
 

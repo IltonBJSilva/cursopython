@@ -14,6 +14,7 @@ def main():
     # Definindo dois times
     time_a = {"João": 24, "Jessica": 18, "Gustavo": 58, "Barbara": 7}
     time_b = {"Leticia": 12, "Gabriel": 88, "José": 4}
+
     times = (time_a, time_b)
 
     # Combinando dois dicionários com uma comprehension

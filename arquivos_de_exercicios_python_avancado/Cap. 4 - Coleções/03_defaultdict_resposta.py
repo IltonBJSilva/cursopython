@@ -7,8 +7,11 @@ def main():
     frutas = ['maçã', 'pêra', 'laranja', 'banana',
               'maçã', 'uva', 'banana', 'banana']
 
-    # Use um dicionário para contar cada elemento
+    # Use um dicionário para contar cada ele mento
     contador_frutas = defaultdict(int)
+    #or
+    contador_frutas = defaultdict(lambda: 100) #vai começar em 100
+
 
     # Conte os elementos da lista
     for fruta in frutas:

@@ -5,7 +5,7 @@ from string import Template
 def main():
     # Formatação tradicional usando o método format()
     frase = "Você está assistindo {0} com {1}".format(
-        "Python Avançado", "Jessica Temporal")
+        "Globo News", "Luiz Temporal")
     print(frase)
     
     # Crie um template com placeholders
@@ -13,11 +13,13 @@ def main():
     
     # Use o método substitute passando argumentos nomeados
     frase_2 = templ.substitute(
-        curso="Python Avançado",
-        instrutora="Jessica Temporal"
+        curso="Globo News",
+        instrutora="Luiz Temporal"
     )
     print(frase_2)
-    
+
+
+'''
     # Use  o método substitute com um dicionário
     dados = { 
         "instrutora": "Jessica Temporal",
@@ -26,7 +28,7 @@ def main():
     frase_3 = templ.substitute(dados)    
     print(frase_3)
 
-
+'''
 if __name__ == "__main__":
     main()
     

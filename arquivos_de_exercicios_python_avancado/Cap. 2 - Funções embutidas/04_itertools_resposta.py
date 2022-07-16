@@ -17,14 +17,16 @@ def main():
     print(next(ciclo))
 
     # use count to create a simple counter
-    contador = itertools.count(100, 10)
+    contador = itertools.count(100, 50) #valor de inicio, e um passo
     print(next(contador))
     print(next(contador))
     print(next(contador))
 
     # A função accumulate cria um iterdor que acumula valores
-    valores = [10, 20, 30, 40, 50, 40, 30]
-    acumulado = itertools.accumulate(valores, max)
+    valores = [10, 20, 30, 40, 50, 40,30]
+    #Percorre a lista e quando acha um valor mais alto e ajusta
+    acumulado = itertools.accumulate(valores,max)
+
     print(list(acumulado))
 
     # Use a função chain para conectar listas
@@ -33,8 +35,8 @@ def main():
 
     # As funções dropwhile e takewhile vai retornar valores até
     # que uma condição seja atingida
-    print(list(itertools.dropwhile(condicao, valores)))
-    print(list(itertools.takewhile(condicao, valores)))
+    print("Drop: ",list(itertools.dropwhile(condicao, valores))) #vai desconsiderar qualquer valor ate que a condição for true
+    print("Take: ",list(itertools.takewhile(condicao, valores))) #vai receber todos os valores até que a condição for true
 
 
 if __name__ == "__main__":

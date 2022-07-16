@@ -10,7 +10,7 @@ class MinhasCores():
     # Use getattr para retornar um valor de forma dinâmica
     def __getattr__(self, attr):
         if attr == "rgb":
-            return (self.vermelho, self.verde, self.azul)
+            return (self.vermelho, self.verde, self.azul) #Retorna o valor RGB
         else:
             raise AttributeError
 
@@ -20,12 +20,13 @@ class MinhasCores():
             self.vermelho = val[0]
             self.verde = val[1]
             self.azul = val[2]
+
         else:
             super().__setattr__(attr, val)
 
     # Use dir para listar as propriedades disponíveis
     def __dir__(self):
-        return ("vermelho", "verde", "azul", "rgb")
+        return ("vermelho", "verde", "azul", ".ç")
 
 
 def main():

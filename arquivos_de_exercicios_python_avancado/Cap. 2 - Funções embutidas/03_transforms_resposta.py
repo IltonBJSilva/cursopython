@@ -2,17 +2,18 @@
 
 
 def primeiro_filtro(x):
-    if x % 2 == 0:
+    if x % 2 == 0: #return false para numeros pares
         return False
-    return True
+    return True #return true para numeros impares
 
 
+#Remover letras maiusculas da lista
 def segundo_filtro(x):
     if x.isupper():
         return False
     return True
 
-
+#Retorna o quadrado do numero
 def quadrado(x):
     return x**2
 
@@ -48,7 +49,7 @@ def main():
     print(quadrados)
 
     # Use sorted e map para mudar as noas para conceito
-    notas = sorted(notas)
+    notas = sorted(notas) #reeordenou
     letras = list(map(nota_para_conceito, notas))
     print(letras)
 

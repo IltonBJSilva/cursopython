@@ -3,7 +3,8 @@
 
 def main():
     # definindo alguns valores iniciais
-    b = bytes([0x41, 0x42, 0x43, 0x44])
+    b = bytes([0x41, 0x42, 0x43, 0x44]) #byte return ABCD
+    #Cada valor do byte representa um letra na tabela ASCII
     print(b)
 
     s = "Isto é uma string"
@@ -14,7 +15,7 @@ def main():
 
     # Bytes e strings precisam ser apropriadamente encoded e
     # decoded antes de serem usados em conjunto
-    s2 = b.decode('utf-8')
+    s2 = b.decode('utf-8') #concatenar byte com strings
     print(s + s2)
 
     b2 = s.encode('utf-8')

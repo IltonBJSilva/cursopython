@@ -9,14 +9,17 @@ class Fruta(Enum):
     BANANA = 2
     LARANJA = 3
     TOMATE = 4
+    ABACAXI = 5
     PERA = auto()
+    MELÃO = auto()
+    MELANCIA = auto()
 
 
 def main():
     # Objetos enum possuem valores e tipos de fácil leitura
-    print(Fruta.UVA)
-    print(type(Fruta.UVA))
-    print(repr(Fruta.UVA))
+    print(f"Valor: {Fruta.UVA}")
+    print(f'Type: {type(Fruta.UVA)}')
+    print(F'Representação: {repr(Fruta.UVA)}')
 
     # Objetos enum possuem propriedades "name" (nome) e "value" (valor)
     print(Fruta.UVA.name, Fruta.UVA.value)

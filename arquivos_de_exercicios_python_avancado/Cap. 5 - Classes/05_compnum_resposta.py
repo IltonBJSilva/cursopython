@@ -6,6 +6,7 @@ class Coordenada():
         self.x = x
         self.y = y
 
+
     def __repr__(self):
         return "<Coordenada x:{0},y:{1}>".format(self.x, self.y)
 

@@ -43,10 +43,11 @@ def main():
     print(bool(dpto[0] > dpto[2]))
     print(bool(dpto[4] < dpto[3]))
 
+
     # Organizando as pessoas por senioridade
     pessoas = sorted(dpto)
     for pessoa in pessoas:
-        print(pessoa.p_nome)
+        print(f" {pessoa.nome} {pessoa.sobrenome} - {pessoa.nivel}")
 
 
 if __name__ == "__main__":

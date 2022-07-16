@@ -4,16 +4,18 @@ import collections
 
 def main():
     # Crie uma namedtuple para armazenar coordenadas
-    coordenadas = collections.namedtuple("Coordenadas", "x y")
+    coordenadas = collections.namedtuple("Coordenadas", "x y") #obj named tuple
 
+    #Instancias
     p1 = coordenadas(10, 20)
     p2 = coordenadas(30, 40)
 
     print(p1, p2)
+    #acessando os nomes
     print(p1.x, p1.y)
 
     # Use _replace() para criar uma instância nova
-    p1 = p1._replace(x=100)
+    p1 = p1._replace(x=100) #atualizando os valores
     print(p1)
 
 

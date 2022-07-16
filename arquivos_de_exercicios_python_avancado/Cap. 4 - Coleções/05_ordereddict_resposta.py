@@ -17,7 +17,8 @@ def main():
     print(times)
 
     # Use popitem para remover o item do topo
-    nome, estatistica = times.popitem(False)
+    nome, estatistica = times.popitem(False)# false = topo da pilha
+    #nome = primeiro valor do dicionario | estastica = segundo valor
     print("Time mais vitorioso: ", nome, estatistica)
 
     # Faça um teste de igualdade

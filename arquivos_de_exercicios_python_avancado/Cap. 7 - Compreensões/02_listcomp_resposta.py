@@ -11,9 +11,11 @@ def main():
         map(lambda n: n**2, filter(lambda n: n > 4 and n < 16, pares)))
     print(pares_quadrado)
 
+    #Compreensões abaixo
+
     # Crie uma lista nova a partir de uma lista preexistente
-    pares_quadrado = [n ** 2 for n in pares]
-    print(pares_quadrado)
+    pares_quadrado2 = [n ** 2 for n in pares]
+    print(pares_quadrado2)
 
     # Use o predicado para limitar os itens da lista
     impares_quadrado = [n ** 2 for n in impares if n > 3 and n < 17]

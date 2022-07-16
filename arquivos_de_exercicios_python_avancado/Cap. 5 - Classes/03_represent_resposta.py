@@ -11,7 +11,7 @@ class Pessoa():
 
     # Use __repr__ para criar uma string que seja útil para debug
     def __repr__(self):
-        texto = "<Classe Pessoa - nome: {0}, sobrenome: {1}, idade{2}>"
+        texto = "<Classe Pessoa - nome: {0}, sobrenome: {1}, idade: {2}>"
         return texto.format(self.nome, self.sobrenome, self.idade)
 
     # Use __str__ para criar uma string amigável para humanos

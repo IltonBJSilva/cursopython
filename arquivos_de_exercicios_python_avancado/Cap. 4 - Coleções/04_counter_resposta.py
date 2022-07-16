@@ -1,10 +1,11 @@
 # Usando a classe Counter
 from collections import Counter
+from itertools import count
 
 
 def main():
     # Uma lista de estudantes na turma A
-    turma_a = ["Bárbara", "João", "Carlos", "Dário", "Priscila", "Ana"
+    turma_a = ["Bárbara", "João", "Carlos", "Dário", "Priscila", "Ana",
                "Kevin", "João", "Marina", "Bianca", "Gustavo", "Fernanda"]
 
     # Uma lista de estudantes na turma B
@@ -21,9 +22,10 @@ def main():
     # Quantos estudantes estão na turma A?
     print(sum(a.values()), "estudantes na turma A")
 
+
     # Combine as duas turmas
-    a.update(turma_b)
-    print(sum(a.values()), "estudantes na turma B")
+    a.update(turma_b) #dar um update
+    print(sum(a.values()), "estudantes na turma B") #somando a+b
 
     # Quais os 3 nomes mais comuns nas duas turmas?
     print(a.most_common(3))
@@ -33,7 +35,7 @@ def main():
     print(a.most_common(3))
 
     # Qual a intersecção de nomes entre as duas turmas?
-    print(a & b)
+    print(a & b) #que tem em ambas as listas
 
 
 if __name__ == "__main__":
